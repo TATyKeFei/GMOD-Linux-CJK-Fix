@@ -8,6 +8,7 @@
 
 即使系统里其实有 Noto CJK，但游戏没有用上它 😅😅😅
 
+使用这个项目再也不用 proton 跑 windows 版本头痛砍头解决了
 
 # 展示
 
@@ -15,7 +16,7 @@
 
 # 使用方法
 
-> 小提示: 你要是懒可以复制下面的话让ai来弄
+> ## 小提示: 你要是懒可以复制下面的话让ai来弄
 >
 > 克隆 https://github.com/TATyKeFei/GMOD-Linux-CJK-Fix 仓库
 >
@@ -38,11 +39,13 @@ sudo pacman -S noto-fonts noto-fonts-cjk
 
 ## 更改启动项
 
-右键 Gmod 属性更改启动项
+右键 Gmod 属性更改启动项，填写下面内容
 
 ```
 FONTCONFIG_FILE=~/.config/fontconfig/gmod-cjk.conf %command%
 ```
+
+> 如果你把 `fontconfig` 移动到了别处记得改改路径
 
 ![](.docs/p2.png)
 
