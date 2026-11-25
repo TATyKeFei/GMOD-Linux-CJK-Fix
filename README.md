@@ -8,15 +8,10 @@
 
 即使系统里其实有 Noto CJK，但游戏没有用上它 😅😅😅
 
----
-
 
 # 展示
 
-![](./docs/p1.png)
-
----
-
+![](.docs/p1.png)
 
 # 使用方法
 
@@ -39,8 +34,16 @@ sudo pacman -S noto-fonts noto-fonts-cjk
 
 ## 安装 FontConfig
 
-将仓库内的字体配置 `~/.config/fontconfig/`
+将仓库内的 `fontconfig` 文件夹移动到 `~/.config/fontconfig/` 你也可以移动别处，但建议在这里
 
 ## 更改启动项
 
+右键 Gmod 属性更改启动项
+
+```
 FONTCONFIG_FILE=~/.config/fontconfig/gmod-cjk.conf %command%
+```
+
+![](.docs/p2.png)
+
+现在启动你的游戏就能看到中日韩字符而不是口口口了，希望能帮到你
